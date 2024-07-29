@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"> 
+                
+    <bean id = "customerService" class="com.pack.service.CustomerService"  scope="singleton"> 
+	</bean>            
+                
+	<bean id = "cusObj" class="com.pack.model.Customer"  scope="singleton"> 
+		<property name = "id" value="1" /> 
+		<property name = "cName" value="Rohit" /> 
+		<property name = "cEmail" value="rohit@gmail.com" /> 
+		<property name = "cPhone" value="11111111" /> 
+		
+	</bean>
+	
+	<bean id = "cusObj1" class="com.pack.model.Customer" scope="singleton"> 
+		<property name = "id" value="2" /> 
+		<property name = "cName" value="Sai" /> 
+		<property name = "cEmail" value="sai@gmail.com" /> 
+		<property name = "cPhone" value="22222" /> 
+	</bean>
+	
+	<bean id = "cusObj2" class="com.pack.model.Customer" scope="singleton"> 
+		<property name = "id" value="3" /> 
+		<property name = "cName" value="Ram" /> 
+		<property name = "cEmail" value="ram@gmail.com" /> 
+		<property name = "cPhone" value="3333333" /> 
+	</bean>
+	
+</beans>
